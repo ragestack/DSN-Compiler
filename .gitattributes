@@ -1,0 +1,5 @@
+# Автор и правообладатель: Леонов Денис <466611@mail.ru>
+* text=auto eol=lf
+*.ps1 text eol=lf
+AARIS_logo.svg binary
+INC/** -text

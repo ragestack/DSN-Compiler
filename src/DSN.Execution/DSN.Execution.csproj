@@ -1,0 +1,5 @@
+<!-- Автор и правообладатель: Леонов Денис <466611@mail.ru> -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup><ProjectReference Include="../DSN.Core/DSN.Core.csproj" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="ExecutionReport.html" LogicalName="DSN.ExecutionReport.html" /></ItemGroup>
+</Project>

@@ -1,0 +1,384 @@
+DSN Compiler
+Лицензионное соглашение / License Agreement
+
+РУССКИЙ
+
+ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ
+об использовании программы для ЭВМ DSN Compiler
+
+Редакция от 26 ноября 2026 года
+
+Автор и правообладатель: Леонов Денис.
+Адрес электронной почты: 466611@mail.ru.
+
+1. Предмет соглашения
+
+1.1. Настоящее соглашение определяет условия использования программы для ЭВМ DSN Compiler, далее – «Программа», в исходной и исполняемой формах.
+
+1.2. Пользователем является физическое или юридическое лицо, использующее Программу на условиях настоящего соглашения либо отдельного договора с Правообладателем.
+
+1.3. Соглашение распространяется на собственный код Программы, принадлежащие Правообладателю части поставляемых библиотек, документацию и другие материалы, к которым приложено настоящее соглашение. Компоненты других правообладателей используются на условиях раздела 7.
+
+1.4. Правообладатель предоставляет Пользователю простую неисключительную лицензию в пределах, установленных настоящим соглашением. Исключительное право на Программу сохраняется за Правообладателем.
+
+1.5. Доступность исходного кода позволяет изучать, собирать и изменять Программу в пределах предоставленных прав. Самостоятельная сборка, изменение исходного кода, интерфейса, названия или оформления сами по себе не предоставляют дополнительных прав на использование исходной Программы и её охраняемых частей.
+
+2. Бесплатное учебное использование
+
+2.1. Физическое лицо вправе бесплатно использовать Программу для самообучения, изучения программирования и функциональных логических схем, выполнения учебных заданий, лабораторных, курсовых, выпускных и иных учебных работ.
+
+2.2. Бесплатный учебный режим предусматривает получение знаний и навыков, проведение учебных экспериментов и создание учебных результатов.
+
+2.3. В рамках учебного режима разрешается устанавливать и запускать Программу, создавать необходимые копии, изучать исходный код, самостоятельно собирать Программу и изменять её для перечисленных учебных целей.
+
+2.4. Обучающийся вправе пользоваться учебным режимом независимо от того, является его обучение платным или бесплатным.
+
+2.5. Если использование одновременно направлено на решение реальной производственной задачи, выполнение работы для работодателя или заказчика либо оказание услуг, применяются условия раздела 4, кроме случаев, прямо предусмотренных разделом 3.
+
+3. Бесплатное использование по судебному поручению
+
+3.1. Разрешается безвозмездное использование Программы при производстве судебных экспертиз и иных исследований, проведение которых поручено Пользователю либо организации, в исполнении поручения которой он законно участвует, судебным актом суда Российской Федерации.
+
+3.2. Для целей настоящего соглашения под судебным поручением понимается поручение о проведении экспертизы или исследования, содержащееся в определении, постановлении либо ином судебном акте по конкретному делу.
+
+3.3. Разрешение распространяется на экспертов, специалистов и иных лиц, законно участвующих в исполнении указанного поручения, в объёме, необходимом для:
+
+а) проведения экспертизы или исследования;
+
+б) подготовки, оформления и представления заключения и других результатов;
+
+в) проверки и воспроизведения полученных результатов;
+
+г) подготовки разъяснений и ответов на вопросы в связи с выполненным поручением.
+
+3.4. Получение вознаграждения за проведение экспертизы или исследования, выполнение работы в рамках трудовых либо служебных обязанностей, а также государственный или негосударственный статус исполнителя не изменяют безвозмездного характера использования Программы в установленных настоящим разделом пределах.
+
+3.5. Разрешение предоставляется непосредственно настоящим соглашением. Получение отдельной платной лицензии или предварительного индивидуального согласия Правообладателя для такого использования не требуется.
+
+3.6. Исследования, выполняемые по самостоятельному заказу стороны, её представителя или другого лица для последующего представления результатов в суд, регулируются общими условиями соглашения, если проведение соответствующего исследования не поручено исполнителю судебным актом.
+
+3.7. Настоящий раздел является специальным исключением из условий о платном служебном и коммерческом использовании и имеет перед ними приоритет в пределах конкретного судебного поручения.
+
+3.8. Распространение изменённых сборок самой Программы осуществляется по разделу 5. Передача заключений, отчётов, образов и других результатов работы регулируется разделом 6.
+
+4. Платное служебное и коммерческое использование
+
+4.1. За исключением прямо разрешённых разделами 2 и 3 случаев, служебное и коммерческое использование Программы допускается на основании отдельного возмездного лицензионного договора с Правообладателем.
+
+4.2. К служебному использованию относится применение Программы при выполнении трудовых, должностных или иных профессиональных обязанностей, а также по поручению организации для обеспечения её деятельности.
+
+4.3. К коммерческому использованию относится применение Программы в предпринимательской деятельности, при выполнении работ или оказании услуг, разработке продукции и программного обеспечения, подготовке материалов и результатов для заказчиков.
+
+4.4. Использование Программы преподавателем или образовательной организацией для проведения занятий в рамках профессиональных обязанностей относится к служебному использованию. Личное использование Программы обучающимся регулируется разделом 2.
+
+4.5. Для определения режима учитываются фактическая цель и характер использования. Организационно-правовая форма, коммерческий или некоммерческий статус организации, источник финансирования и наличие непосредственного дохода от конкретного запуска Программы сами по себе режим использования не меняют.
+
+4.6. Отдельный договор определяет лицензиата, разрешённые способы использования, количество пользователей или рабочих мест, срок, территорию, размер вознаграждения или порядок его определения и порядок оплаты.
+
+4.7. Права для служебного и коммерческого использования предоставляются в порядке и с момента, установленных отдельным договором.
+
+5. Исходный код, самостоятельная сборка и распространение
+
+5.1. В пределах применимого бесплатного режима либо отдельного платного договора Пользователь вправе копировать и изучать исходный код, самостоятельно собирать Программу и вносить изменения в свой экземпляр для разрешённых целей.
+
+5.2. Условия использования принадлежащих Правообладателю охраняемых частей Программы сохраняются при их включении в изменённую версию, другую программу или программный комплекс.
+
+Переименование, замена интерфейса и ресурсов, изменение отдельных функций, переработка кода или его перевод на другой язык программирования сами по себе не освобождают от соблюдения предоставленных прав и установленных условий.
+
+5.3. Разрешается безвозмездно передавать и публично размещать неизменённые официальные комплекты Программы при сохранении настоящего соглашения, имеющихся сведений об авторстве и относящихся к поставке сторонних уведомлений. Происхождение и версия распространяемого комплекта должны быть обозначены.
+
+5.4. Разрешается безвозмездно копировать, передавать и размещать исходные тексты Программы, включая изменённые исходные тексты, в том числе в публичных репозиториях и их ответвлениях, при соблюдении следующих условий:
+
+а) сохраняются настоящее соглашение и имеющиеся уведомления правообладателей;
+
+б) изменённые исходные тексты обозначаются как изменённые, с указанием внесённых изменений и их автора;
+
+в) получателям предоставляются сведения о бесплатных и платном режимах использования;
+
+г) исходная Программа и принадлежащие Правообладателю охраняемые части её кода предоставляются получателям на условиях настоящего соглашения;
+
+д) изменённые исходные тексты обозначаются таким образом, чтобы их можно было отличить от официальной версии Правообладателя.
+
+5.5. Передача другим лицам, публичное размещение, предоставление для скачивания и иное распространение изменённых исполняемых сборок самой Программы допускаются только с предварительного письменного согласия Правообладателя. Это условие действует как при платном, так и при бесплатном распространении.
+
+5.6. Под изменённой исполняемой сборкой понимается исполняемая версия Программы, подготовленная с изменениями её исходного кода, встроенных ресурсов или программных компонентов относительно соответствующей официальной версии.
+
+Действия, предусмотренные штатным процессом сборки неизменённых официальных исходников, сами по себе модификацией не являются. Изменение пользовательских DSN, входных данных, настроек сеанса и результатов работы также само по себе не является изменением сборки Программы.
+
+5.7. Письменное согласие на распространение изменённой сборки определяет разрешённую версию, способы и условия её распространения. Такое согласие может быть включено в отдельный лицензионный договор. Само согласие на распространение не предоставляет иных прав, если они прямо не предусмотрены его условиями.
+
+5.8. Продажа экземпляров Программы, предоставление платного доступа к ней и включение её в платный программный продукт или сервис требуют отдельного договора с Правообладателем.
+
+5.9. Разрешение на публикацию исходных текстов, создание ответвлений репозитория или самостоятельную сборку не заменяет разрешения на распространение изменённых исполняемых сборок и получения платной лицензии для служебного или коммерческого использования.
+
+5.10. Права на самостоятельно созданные изменения определяются законодательством. Такие права осуществляются с соблюдением прав на исходную Программу. Настоящее соглашение само по себе не предусматривает передачу Правообладателю исключительных прав на изменения Пользователя.
+
+6. Пользовательские материалы и результаты работы
+
+6.1. Настоящее соглашение не передаёт Правообладателю права на предоставленные Пользователем DSN-программы, исходные данные, настройки, сценарии, сеансы и другие пользовательские материалы.
+
+6.2. Права на создаваемые Пользователем программы, отчёты и другие результаты определяются законодательством и основаниями их создания. Само использование DSN Compiler не устанавливает авторство Правообладателя на пользовательские алгоритмы и данные.
+
+6.3. Если законно сформированный результат включает принадлежащие Правообладателю фрагменты библиотек, стартового кода или шаблонов отчётов Программы, Правообладатель разрешает использовать, воспроизводить и распространять эти фрагменты в составе соответствующего результата и его последующих версий.
+
+6.4. Разрешение пункта 6.3 распространяется на исходную и объектную формы включённого кода в объёме, необходимом для использования, сопровождения и интеграции результата.
+
+Использование этого разрешения для распространения самой Программы, её изменённых сборок или извлечённых компонентов в качестве самостоятельного программного продукта регулируется разделом 5.
+
+6.5. За распространение законно сформированных результатов и их исполнение на конечных устройствах отдельное вознаграждение Правообладателю не предусмотрено. Обязанность получить платную лицензию определяется целью использования самой Программы согласно разделу 4.
+
+6.6. Ограничение на распространение изменённых сборок DSN Compiler не распространяется само по себе на пользовательские DSN-программы, заключения, HTML-отчёты, историю состояний и сформированные машинные модули и образы.
+
+6.7. В отношении включённых в результат компонентов других правообладателей сохраняются их собственные условия использования.
+
+7. Сторонние компоненты
+
+7.1. Программа и комплекты поставки могут содержать компоненты других правообладателей. Их лицензии и уведомления сохраняют самостоятельное действие.
+
+7.2. Настоящее соглашение предоставляет права только в пределах, которыми располагает Правообладатель. Условия сторонней лицензии имеют приоритет в отношении соответствующего стороннего компонента.
+
+7.3. Средства сборки для процессоров, среды исполнения, SDK и другие отдельно подключаемые инструменты используются на условиях их правообладателей.
+
+7.4. Оплата лицензии DSN Compiler сама по себе не включает приобретение лицензий на отдельно лицензируемые сторонние продукты.
+
+8. Территория и срок
+
+8.1. Бесплатные права, предусмотренные настоящим соглашением, предоставляются на территории всего мира на весь срок действия исключительного права Правообладателя на соответствующую версию Программы при соблюдении установленных условий.
+
+8.2. Бесплатное разрешение раздела 3 применяется к исполнению поручений судов Российской Федерации независимо от места фактического использования Программы.
+
+8.3. Территория и срок служебного и коммерческого использования определяются отдельным договором.
+
+8.4. Условия конкретной редакции соглашения применяются к экземпляру Программы, с которым они были предоставлены. Выпуск новой редакции сам по себе не изменяет условия ранее предоставленной версии.
+
+8.5. Условия использования обновлений определяются при их предоставлении.
+
+9. Принятие соглашения
+
+9.1. Условия соглашения предоставляются Пользователю для ознакомления до начала использования Программы.
+
+9.2. Начало самостоятельной сборки либо первый запуск Программы после предоставления возможности ознакомиться с соглашением означает принятие его условий в отношении предоставленных настоящим соглашением прав.
+
+9.3. Получение прав для платного служебного и коммерческого использования оформляется отдельным договором. Принятие настоящего соглашения не заменяет заключение такого договора.
+
+9.4. Согласие на распространение изменённых исполняемых сборок оформляется отдельно в соответствии с пунктами 5.5–5.7.
+
+10. Функциональные возможности, сопровождение и ответственность
+
+10.1. Функциональные возможности, поддерживаемые форматы и условия работы определяются документацией соответствующей версии Программы.
+
+10.2. Пользователь самостоятельно определяет пригодность выбранной версии для своих задач и проверяет результаты перед их дальнейшим применением.
+
+10.3. Интеграция сформированных модулей и образов в конкретное устройство выполняется с учётом его аппаратной конфигурации, карты памяти, программного окружения и необходимых испытаний.
+
+10.4. Техническая поддержка, сроки исправлений, предоставление обновлений и дополнительные гарантии могут быть установлены отдельным договором.
+
+10.5. Ответственность сторон определяется применимым законодательством и заключёнными между ними договорами. Условия соглашения не исключают ответственность за умышленное нарушение обязательств и другие случаи, в которых ограничение ответственности запрещено законом.
+
+11. Заключительные положения
+
+11.1. К соглашению применяется право Российской Федерации с учётом обязательных норм, подлежащих применению к соответствующим отношениям.
+
+11.2. Предоставленные законом права Пользователя сохраняются в той части, в которой их ограничение соглашением не допускается.
+
+11.3. Прекращение предоставленных прав осуществляется по основаниям и в порядке, предусмотренным законодательством и применимым договором.
+
+11.4. Прекращение права использования самой Программы не передаёт Правообладателю права на пользовательские материалы и не прекращает ранее предоставленные разрешения в отношении законно сформированных результатов по разделу 6.
+
+11.5. По вопросам лицензирования, получения платной лицензии и согласования распространения изменённых сборок стороны взаимодействуют по адресу 466611@mail.ru.
+
+11.6. Споры разрешаются в порядке, установленном применимым законодательством.
+
+11.7. При наличии перевода соглашения на другие языки основным является русский текст, если обязательными нормами применимого законодательства не установлено иное.
+
+======================================================================
+
+ENGLISH
+
+LICENSE AGREEMENT
+for the use of the DSN Compiler computer program
+
+Version dated 26 November 2026
+
+Author and Rights Holder: Denis Leonov.
+Email address: 466611@mail.ru.
+
+1. Subject of the Agreement
+
+1.1. This Agreement sets out the terms for using the DSN Compiler computer program, hereinafter the "Program", in source and executable forms.
+
+1.2. The User is an individual or a legal entity using the Program under this Agreement or a separate agreement with the Rights Holder.
+
+1.3. This Agreement applies to the Program's own code, the parts of the supplied libraries belonging to the Rights Holder, documentation, and other materials accompanied by this Agreement. Components belonging to other rights holders are used under Section 7.
+
+1.4. The Rights Holder grants the User a non-exclusive license within the limits established by this Agreement. The exclusive right to the Program remains with the Rights Holder.
+
+1.5. Availability of the source code permits studying, building, and modifying the Program within the granted rights. Independently building the Program or changing its source code, interface, name, or appearance does not in itself grant additional rights to use the original Program or its protected parts.
+
+2. Free Educational Use
+
+2.1. An individual may use the Program free of charge for self-study, studying programming and functional logic diagrams, completing educational assignments, laboratory work, coursework, graduation projects, and other educational work.
+
+2.2. The free educational mode covers acquiring knowledge and skills, conducting educational experiments, and creating educational results.
+
+2.3. Within the educational mode, the User may install and run the Program, make necessary copies, study its source code, independently build the Program, and modify it for the educational purposes listed above.
+
+2.4. A learner may use the educational mode regardless of whether their education is paid or free of charge.
+
+2.5. If the use also serves a real production task, work for an employer or customer, or the provision of services, Section 4 applies, except in the cases expressly provided for in Section 3.
+
+3. Free Use Pursuant to a Court Assignment
+
+3.1. The Program may be used free of charge when conducting forensic expert examinations and other research assigned by a judicial act of a court of the Russian Federation to the User or to an organisation in whose performance of that assignment the User lawfully participates.
+
+3.2. For the purposes of this Agreement, a court assignment means an assignment to conduct an expert examination or research set out in a ruling, resolution, or other judicial act in a specific case.
+
+3.3. This permission extends to experts, specialists, and other persons lawfully participating in carrying out the assignment, to the extent necessary for:
+
+a) conducting the expert examination or research;
+
+b) preparing, documenting, and submitting the expert opinion and other results;
+
+c) verifying and reproducing the results obtained;
+
+d) preparing explanations and answers to questions in connection with the completed assignment.
+
+3.4. Receiving remuneration for the expert examination or research, performing the work as part of employment or official duties, and the public or private status of the person or organisation performing it do not change the free-of-charge nature of Program use within the limits established by this Section.
+
+3.5. This permission is granted directly by this Agreement. A separate paid license or prior individual consent from the Rights Holder is not required for such use.
+
+3.6. Research independently commissioned by a party, their representative, or another person for subsequent submission of the results to a court is governed by the general terms of this Agreement unless the relevant research has been assigned to its performer by a judicial act.
+
+3.7. This Section is a specific exception to the terms on paid work-related and commercial use and takes precedence over them within the scope of the specific court assignment.
+
+3.8. Distribution of modified builds of the Program itself is governed by Section 5. Transfer of expert opinions, reports, images, and other results is governed by Section 6.
+
+4. Paid Work-Related and Commercial Use
+
+4.1. Except for the cases expressly permitted by Sections 2 and 3, work-related and commercial use of the Program is permitted under a separate license agreement for remuneration with the Rights Holder.
+
+4.2. Work-related use means using the Program in performing employment, official, or other professional duties, or on behalf of an organisation to support its activities.
+
+4.3. Commercial use means using the Program in business activities, performing work or providing services, developing products and software, or preparing materials and results for customers.
+
+4.4. Use of the Program by a teacher or an educational organisation to conduct classes as part of professional duties constitutes work-related use. A learner's personal use of the Program is governed by Section 2.
+
+4.5. The applicable mode is determined by the actual purpose and nature of use. An organisation's legal form, commercial or non-commercial status, funding source, and the receipt of direct income from a particular run of the Program do not in themselves change the applicable mode of use.
+
+4.6. The separate agreement specifies the licensee, permitted methods of use, number of users or workstations, term, territory, amount of remuneration or the procedure for determining it, and payment procedure.
+
+4.7. Rights for work-related and commercial use are granted in the manner and from the time established by the separate agreement.
+
+5. Source Code, Independent Builds, and Distribution
+
+5.1. Within the applicable free mode or a separate paid agreement, the User may copy and study the source code, independently build the Program, and modify their own copy for permitted purposes.
+
+5.2. The terms for using the protected parts of the Program belonging to the Rights Holder remain applicable when those parts are included in a modified version, another program, or a software suite.
+
+Renaming, replacing the interface and resources, changing individual functions, reworking the code, or translating it into another programming language does not in itself remove the obligation to comply with the granted rights and established terms.
+
+5.3. Unmodified official Program packages may be transferred and made publicly available free of charge, provided that this Agreement, existing authorship information, and third-party notices relating to the distribution are preserved. The origin and version of the distributed package must be identified.
+
+5.4. The Program's source code, including modified source code, may be copied, transferred, and made available free of charge, including in public repositories and their forks, subject to the following conditions:
+
+a) this Agreement and existing rights holder notices are preserved;
+
+b) modified source code is identified as modified, with the changes and their author indicated;
+
+c) recipients are informed of the free and paid modes of use;
+
+d) the original Program and the protected parts of its code belonging to the Rights Holder are provided to recipients under this Agreement;
+
+e) modified source code is identified in a way that distinguishes it from the Rights Holder's official version.
+
+5.5. Transfer to other persons, public posting, making available for download, and any other distribution of modified executable builds of the Program itself are permitted only with the Rights Holder's prior written consent. This condition applies to both paid and free-of-charge distribution.
+
+5.6. A modified executable build means an executable version of the Program prepared with changes to its source code, embedded resources, or software components relative to the corresponding official version.
+
+Actions provided for by the standard build process for unmodified official source code do not in themselves constitute a modification. Changes to the User's DSN files, input data, session settings, and results do not in themselves constitute a modification of the Program build either.
+
+5.7. Written consent to distribute a modified build specifies the permitted version, methods, and conditions of distribution. Such consent may be included in a separate license agreement. Consent to distribution does not itself grant other rights unless they are expressly provided for in its terms.
+
+5.8. Selling copies of the Program, providing paid access to it, and including it in a paid software product or service require a separate agreement with the Rights Holder.
+
+5.9. Permission to publish source code, create repository forks, or build the Program independently does not replace permission to distribute modified executable builds or the requirement to obtain a paid license for work-related or commercial use.
+
+5.10. Rights to independently created modifications are determined by law. Such rights are exercised with due regard for the rights to the original Program. This Agreement does not in itself provide for transferring exclusive rights to the User's modifications to the Rights Holder.
+
+6. User Materials and Results
+
+6.1. This Agreement does not transfer to the Rights Holder any rights to DSN programs, input data, settings, scenarios, sessions, or other materials supplied by the User.
+
+6.2. Rights to programs, reports, and other results created by the User are determined by law and the legal grounds on which they were created. Using DSN Compiler does not in itself establish the Rights Holder's authorship of the User's algorithms or data.
+
+6.3. If a lawfully generated result includes fragments of the Program's libraries, startup code, or report templates belonging to the Rights Holder, the Rights Holder permits those fragments to be used, reproduced, and distributed as part of that result and its subsequent versions.
+
+6.4. The permission in Clause 6.3 covers the source and object forms of the included code to the extent necessary to use, maintain, and integrate the result.
+
+Use of this permission to distribute the Program itself, its modified builds, or extracted components as a standalone software product is governed by Section 5.
+
+6.5. No separate remuneration to the Rights Holder is provided for distributing lawfully generated results or executing them on end devices. The obligation to obtain a paid license is determined by the purpose of using the Program itself under Section 4.
+
+6.6. The restriction on distributing modified builds of DSN Compiler does not in itself apply to the User's DSN programs, expert opinions, HTML reports, state history, or generated machine-code modules and images.
+
+6.7. Components belonging to other rights holders that are included in a result remain subject to their own terms of use.
+
+7. Third-Party Components
+
+7.1. The Program and distribution packages may contain components belonging to other rights holders. Their licenses and notices remain independently applicable.
+
+7.2. This Agreement grants rights only to the extent held by the Rights Holder. A third-party license takes precedence with respect to the corresponding third-party component.
+
+7.3. Processor build tools, runtimes, SDKs, and other separately connected tools are used under their respective rights holders' terms.
+
+7.4. Payment for a DSN Compiler license does not in itself include acquiring licenses for separately licensed third-party products.
+
+8. Territory and Term
+
+8.1. The free rights provided by this Agreement are granted worldwide for the full duration of the Rights Holder's exclusive right to the relevant version of the Program, subject to compliance with the established terms.
+
+8.2. The free permission in Section 3 applies to assignments from courts of the Russian Federation regardless of where the Program is actually used.
+
+8.3. The territory and term of work-related and commercial use are determined by a separate agreement.
+
+8.4. The terms of a particular version of this Agreement apply to the copy of the Program with which they were provided. Issuing a new version of the Agreement does not in itself change the terms of a previously provided Program version.
+
+8.5. Terms for using updates are determined when those updates are provided.
+
+9. Acceptance of the Agreement
+
+9.1. The terms of this Agreement are made available to the User for review before use of the Program begins.
+
+9.2. Starting an independent build or running the Program for the first time after being given the opportunity to review this Agreement constitutes acceptance of its terms with respect to the rights granted by this Agreement.
+
+9.3. Rights for paid work-related and commercial use are arranged under a separate agreement. Acceptance of this Agreement does not replace entering into that agreement.
+
+9.4. Consent to distribute modified executable builds is arranged separately in accordance with Clauses 5.5–5.7.
+
+10. Functionality, Support, and Liability
+
+10.1. Functionality, supported formats, and operating conditions are determined by the documentation for the relevant version of the Program.
+
+10.2. The User independently determines whether the selected version is suitable for their tasks and verifies results before applying them further.
+
+10.3. Generated modules and images are integrated into a specific device taking into account its hardware configuration, memory map, software environment, and necessary testing.
+
+10.4. Technical support, timeframes for fixes, provision of updates, and additional warranties may be established by a separate agreement.
+
+10.5. The parties' liability is determined by applicable law and agreements between them. The terms of this Agreement do not exclude liability for intentional breach of obligations or other cases in which limitation of liability is prohibited by law.
+
+11. Final Provisions
+
+11.1. This Agreement is governed by the law of the Russian Federation, taking into account mandatory rules applicable to the relevant relationships.
+
+11.2. The User's statutory rights are preserved to the extent that their restriction by agreement is not permitted.
+
+11.3. Granted rights are terminated on the grounds and in the manner provided by law and the applicable agreement.
+
+11.4. Termination of the right to use the Program itself does not transfer rights to User materials to the Rights Holder and does not terminate permissions previously granted for lawfully generated results under Section 6.
+
+11.5. For licensing matters, obtaining a paid license, and agreeing on distribution of modified builds, the parties communicate at 466611@mail.ru.
+
+11.6. Disputes are resolved in the manner established by applicable law.
+
+11.7. If this Agreement is translated into other languages, the Russian text prevails unless mandatory provisions of applicable law provide otherwise.

@@ -1,0 +1,12 @@
+DSN Compiler – сведения о сторонних материалах
+
+Переносимая поставка содержит неизменённые бинарные файлы Microsoft .NET
+из официального SDK ZIP Windows x64. Их лицензии и уведомления находятся
+в runtime/. Собственные условия использования DSN Compiler не заменяют
+условия сторонних правообладателей. Подробнее: README.md.
+
+Отдельный исходный комплект дополнительно содержит неизменённый официальный
+Microsoft .NET SDK ZIP. Версия, URL и SHA-512: toolchain.lock.json;
+исходные LICENSE.txt/ThirdPartyNotices.txt сохранены внутри архива и рядом
+с ним в dependencies/dotnet-LICENSE.txt и dotnet-ThirdPartyNotices.txt.
+Системные компоненты Microsoft не переатрибутируются проекту DSN Compiler.

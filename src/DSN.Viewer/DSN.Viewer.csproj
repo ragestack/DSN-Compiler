@@ -1,0 +1,21 @@
+<!-- Автор и правообладатель: Леонов Денис <466611@mail.ru> -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+    <AppHostRelativeDotNet>runtime</AppHostRelativeDotNet>
+    <AssemblyName>DSNViewer</AssemblyName>
+    <ApplicationIcon>Assets/AARIS.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="../../INC/RV32I.INC" Condition="Exists('../../INC/RV32I.INC')" Link="libraries/RV32I.INC" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../INC/MSP430.INC" Condition="Exists('../../INC/MSP430.INC')" Link="libraries/MSP430.INC" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../implementations/*.json" Link="implementations/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="Assets/AARIS.ico" />
+    <Resource Include="../../AARIS_logo.svg" Link="Assets/AARIS_logo.svg" />
+    <ProjectReference Include="../DSN.Execution/DSN.Execution.csproj" />
+    <Content Include="../../INC/ADSP21.INC" Condition="Exists('../../INC/ADSP21.INC')" Link="libraries/ADSP21.INC" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

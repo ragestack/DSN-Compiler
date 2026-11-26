@@ -1,0 +1,8 @@
+{
+  "Id": "MSP430",
+  "Architecture": "MSP430",
+  "Version": 1,
+  "Libraries": {
+    "LOGIC": "MSP430.INC"
+  }
+}

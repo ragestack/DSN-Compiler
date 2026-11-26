@@ -1,0 +1,12 @@
+{
+  "sdk_version": "10.0.404",
+  "runtime_version": "10.0.15",
+  "sdk_asset": {
+    "name": "dotnet-sdk-win-x64.zip",
+    "rid": "win-x64",
+    "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.404/dotnet-sdk-10.0.404-win-x64.zip",
+    "hash": "330ddd2665b43cd2e428216a0d8ea1ac7bb19b5434fdc530e62010dc3b52823a620bf95489d628e1ed6f5122401793ee4887cca4a019122361a1231497f632ee"
+  },
+  "metadata_url": "https://builds.dotnet.microsoft.com/dotnet/release-metadata/10.0/releases.json",
+  "product_version": "0.1.0-rc12"
+}

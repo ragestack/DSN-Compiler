@@ -1,0 +1,7 @@
+<!-- Автор и правообладатель: Леонов Денис <466611@mail.ru> -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <EmbeddedResource Include="../../languages/*.json" LogicalName="DSN.Languages.%(Filename)%(Extension)" />
+    <Content Include="../../languages/*.json" Link="languages/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+{
+  "Id": "ADSP21",
+  "Architecture": "ADSP21",
+  "Version": 1,
+  "Libraries": {
+    "LOGIC": "ADSP21.INC"
+  }
+}

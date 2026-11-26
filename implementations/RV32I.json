@@ -1,0 +1,8 @@
+{
+  "Id": "RV32I",
+  "Architecture": "RV32I",
+  "Version": 1,
+  "Libraries": {
+    "LOGIC": "RV32I.INC"
+  }
+}

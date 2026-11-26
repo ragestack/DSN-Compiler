@@ -1,0 +1,16 @@
+<!-- Автор и правообладатель: Леонов Денис <466611@mail.ru> -->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>DSNRunner</AssemblyName>
+    <AppHostDotNetSearch>AppRelative</AppHostDotNetSearch>
+    <AppHostRelativeDotNet>runtime</AppHostRelativeDotNet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="../../INC/RV32I.INC" Condition="Exists('../../INC/RV32I.INC')" Link="libraries/RV32I.INC" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../INC/MSP430.INC" Condition="Exists('../../INC/MSP430.INC')" Link="libraries/MSP430.INC" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="../../implementations/*.json" Link="implementations/%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <ProjectReference Include="../DSN.Execution/DSN.Execution.csproj" />
+    <Content Include="../../INC/ADSP21.INC" Condition="Exists('../../INC/ADSP21.INC')" Link="libraries/ADSP21.INC" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

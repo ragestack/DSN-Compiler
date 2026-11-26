@@ -1,0 +1,10 @@
+<svg width="50px" height="50px" clip-rule="evenodd" display="block" fill-rule="evenodd" image-rendering="optimizeQuality" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" style="margin:0 auto" version="1.1" viewBox="0 0 1e3 1e3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style type="text/css">
+            .str0 {stroke:black;stroke-width:25}
+            .fil0 {fill:black;fill-rule:nonzero}
+        </style>
+    </defs>
+    <path class="fil0 str0" d="m500 56c123 0 234 50 314 130s130 191 130 314-50 234-130 314c-80 81-191 130-314 130s-234-49-314-130c-81-80-130-191-130-314s49-234 130-314c80-80 191-130 314-130zm0 33c-114 0-217 46-291 120-74 75-121 178-121 291 0 114 47 217 121 291s177 121 291 121c113 0 216-47 291-121 74-74 120-177 120-291 0-113-46-216-120-291-75-74-178-120-291-120z"/>
+    <path class="fil0" d="m774 305c-27-46-66-85-113-112s-102-43-161-43-114 16-161 43-86 66-113 112h-52v43h37v204 204h88v43h79v-43h122 122v43h79v-43h88v-204-204h37v-43h-52zm-56 404h-218-218v-117-117h218 218v117 117zm0-282h-218-218v-79h112v63h78v-106h-171c47-56 118-93 199-93s152 37 198 93h-170v106h78v-63h112v79z"/>
+</svg>

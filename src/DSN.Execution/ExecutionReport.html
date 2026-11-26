@@ -1,0 +1,105 @@
+<!-- Автор и правообладатель: Леонов Денис <466611@mail.ru> -->
+<!DOCTYPE html>
+<html lang="__LANGUAGE__"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'">
+<title>__TITLE__</title>
+<style>
+:root{font:15px system-ui,Arial,sans-serif;color:#1c252b;background:#eef2f5}*{box-sizing:border-box}body{margin:0}header,main{max-width:1500px;margin:auto;padding:22px}header{background:#142e43;color:#fff;max-width:none}header>div{max-width:1456px;margin:auto}h1{font-size:25px;margin:6px 0 14px}h2{font-size:19px;margin:0 0 14px}p{line-height:1.55}section{background:white;border:1px solid #d6dfe6;border-radius:10px;padding:20px;margin:0 0 18px}nav{display:flex;flex-wrap:wrap;gap:15px;margin:14px 0}a{color:#2377ae}header a{color:#b9e4ff}.bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0}label{display:inline-flex;align-items:center;gap:7px}button,select,input{font:inherit;border:1px solid #aabcc9;border-radius:5px;padding:7px;background:#fff;color:#142e43}button{cursor:pointer}button:disabled{opacity:.45;cursor:default}input[type=range]{flex:1;min-width:150px;padding:0}input[type=number]{width:110px}input[type=search]{min-width:230px}button:hover{background:#e8f4fc}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #e4a625;outline-offset:2px}.muted{color:#596d7b;font-size:13px}.notice{padding:11px 14px;background:#fff3cf;border-left:4px solid #d8a335;white-space:pre-wrap}.grid{display:grid;grid-template-columns:minmax(130px,210px) minmax(0,1fr);gap:7px 16px}.grid>div{overflow-wrap:anywhere}.grid>div:nth-child(odd){font-weight:600}.scroll{overflow:auto;max-height:650px}table{width:100%;border-collapse:collapse;font:13px ui-monospace,Consolas,monospace}th,td{padding:8px;border-bottom:1px solid #e2e8ed;text-align:left;white-space:nowrap}th{position:sticky;top:0;background:#edf3f7;font:600 13px system-ui,Arial}td.changed{background:#fff1cd}#schemeView{width:100%;height:65vh;min-height:320px;border:1px solid #cddae3;touch-action:none;cursor:grab;background:#fff}#schemeView:active{cursor:grabbing}#schemeView svg{width:100%;height:100%;display:block}.chart{margin-top:14px;border:1px solid #d7e2e9;border-radius:7px;padding:12px}.chart svg{width:100%;height:190px}.chart .bar{justify-content:space-between}pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:450px;overflow:auto;background:#f2f5f8;padding:12px;font-size:12px}.status{font-weight:700}.bad{color:#a22e22}.good{color:#167143}footer{padding:10px;color:#596d7b;font-size:12px}[hidden]{display:none!important}@media(max-width:650px){main,header{padding:12px}section{padding:12px}.grid{grid-template-columns:1fr}.grid>div:nth-child(even){margin-bottom:9px}h1{font-size:21px}}
+</style></head><body>
+<header><div><div class="bar"><strong>DSN Compiler</strong><label><span data-label="Language"></span><select id="language" aria-label="RU / EN"><option value="ru">RU</option><option value="en">EN</option></select></label></div><h1 data-label="Title"></h1><div id="subtitle"></div><nav><a href="#summary" data-label="Summary"></a><a href="#scheme" data-label="Scheme"></a><a href="#data" data-label="Data"></a><a href="#diagrams" data-label="Diagrams"></a><a href="#checks" data-label="Checks"></a><a href="#conditions" data-label="Conditions"></a></nav></div></header>
+<main>
+<section id="summary"><h2 data-label="Summary"></h2><div id="meta" class="grid"></div><p class="notice" id="scope"></p></section>
+<section id="scheme"><h2 data-label="Scheme"></h2><div class="bar"><button id="fit" data-label="Fit"></button><button id="zoomIn" aria-label="+">+</button><button id="zoomOut" aria-label="−">−</button><span class="muted" data-label="SchemeHelp"></span></div><div id="schemeView">__SCHEME__</div><p id="noScheme" class="muted" data-label="NotIncluded" hidden></p></section>
+<section id="data"><h2 data-label="Data"></h2><div class="bar"><label><span data-label="Tick"></span><input id="tickNumber" type="number"></label><input id="tick" type="range"><span id="flagValues" class="muted"></span></div><div class="bar"><label><span data-label="Kind"></span><select id="kind"><option value="variables" data-label="Variables"></option><option value="registers" data-label="Registers"></option><option value="history" data-label="SeriesHistory"></option></select></label><label><span data-label="Find"></span><input id="find" type="search"></label><label><span data-label="NumberFormat"></span><select id="numberFormat"><option value="dec" data-label="Decimal"></option><option value="hex">HEX</option></select></label></div><p id="coverage" class="muted"></p><div class="scroll"><table id="values"><thead></thead><tbody></tbody></table></div><div class="bar"><button id="prev" data-label="Previous"></button><span id="page"></span><button id="next" data-label="Next"></button></div></section>
+<section id="diagrams"><h2 data-label="Diagrams"></h2><div class="bar"><label><span data-label="Series"></span><select id="series"></select></label><button id="addChart" data-label="AddChart"></button></div><p class="muted" data-label="ChartHelp"></p><div id="charts"></div></section>
+<section id="checks"><h2 data-label="Checks"></h2><p data-label="CheckScope" class="muted"></p><p id="checkStatus"></p><div class="scroll"><table id="expectations"><thead></thead><tbody></tbody></table></div></section>
+<section id="conditions"><h2 data-label="Conditions"></h2><div id="conditionMeta" class="grid"></div><details><summary data-label="FullContext"></summary><pre id="context"></pre></details><details><summary data-label="Order"></summary><pre id="order"></pre></details></section>
+<footer data-label="Footer"></footer>
+</main><script id="reportData" type="application/json">__DATA__</script><script id="reportLabels" type="application/json">__LABELS__</script>
+<script>
+// Автор и правообладатель: Леонов Денис <466611@mail.ru>
+'use strict';
+(function(){
+const D=JSON.parse(document.getElementById('reportData').textContent), L=JSON.parse(document.getElementById('reportLabels').textContent);
+const $=id=>document.getElementById(id), NS='http://www.w3.org/2000/svg';
+let language=D.Language, tick=D.FirstTick, page=0, chartKeys=[]; const pageSize=80;
+function t(key){return L[language][key]||key;}
+function element(tag,text,parent){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+function svgElement(tag,attrs,parent){const e=document.createElementNS(NS,tag);Object.keys(attrs).forEach(k=>e.setAttribute(k,String(attrs[k])));if(parent)parent.appendChild(e);return e;}
+function textValue(value,bits){return value===null||value===undefined?t('NoData'):$('numberFormat').value==='hex'?'0x'+Number(value).toString(16).toUpperCase().padStart(bits/4,'0'):String(value);}
+function value(key,at){const a=key.split(':'),i=Number(a[1]);if(a[0]==='v')return D.Values[at-D.FirstTick][i];return D.Processor&&at>=D.Processor.FirstTick&&at<D.Processor.FirstTick+D.Processor.Values.length?D.Processor.Values[at-D.Processor.FirstTick][i]:null;}
+function seriesName(key){return key[0]==='v'?D.Variables[Number(key.slice(2))]:D.RegisterNames[Number(key.slice(2))];}
+function seriesBits(key){return key[0]==='v'?16:D.RegisterBits;}
+function setGrid(id,rows){$(id).replaceChildren();rows.forEach(pair=>{element('div',pair[0],$(id));element('div',String(pair[1]),$(id));});}
+function headers(table,labels){const row=document.createElement('tr');labels.forEach(x=>element('th',t(x),row));$(table).tHead.replaceChildren(row);}
+function status(name){return t(name==='NOT_CONFIGURED'?'NoExpectations':name);}
+function renderMeta(){
+ $('subtitle').textContent=D.Program+' · '+D.Architecture+' · '+D.FirstTick+'…'+D.LastTick;
+ setGrid('meta',[[t('Program'),D.Program],[t('Created'),D.Created],[t('Version'),D.ApplicationVersion],[t('Architecture'),D.Architecture],[t('Range'),D.FirstTick+'…'+D.LastTick],[t('Completed'),D.CompletedTick],['DSN SHA-256',D.Identity.DSNSha256],['INC SHA-256',D.Identity.LibrarySha256],[t('ContextHash'),D.Identity.ProfileSha256],[t('Kernel'),D.Identity.Kernel],[t('Compatibility'),D.Identity.CompatibilityConfirmed?t('Confirmed'):t('NotConfirmed')]]);
+ $('scope').textContent=t('Scope')+(D.Faulted?'\n'+t('Faulted')+'\n'+(D.FaultDiagnostic||''):'');
+ const p=D.Processor;
+ $('coverage').textContent=t('Coverage')+' '+D.Variables.length+'; '+(D.RegistersIncluded?(p?t('RegisterRange')+' '+p.FirstTick+'…'+(p.FirstTick+p.Values.length-1):t('NoData')):t('RegistersExcluded'));
+ setGrid('conditionMeta',[[t('Stopped'),D.LastStop?D.LastStop.Tick:t('NoStop')],[t('Scenario'),D.Scenario?D.Scenario.Title:t('NoScenario')],[t('ManualCount'),D.ManualInputs.length],[t('PendingInputs'),JSON.stringify(D.PendingInputs)]]);
+ $('context').textContent=JSON.stringify({Context:D.Context,InitialOverrides:D.InitialOverrides,Scenario:D.Scenario,UseScenarioEvents:D.UseScenarioEvents,ManualInputs:D.ManualInputs,PendingInputs:D.PendingInputs,StopConditions:D.StopConditions,LastStop:D.LastStop},null,2);
+ $('order').textContent=D.Order.join('\n');
+ const r=D.Verification;$('checkStatus').textContent=status(r.Result)+' · '+t('Checked')+': '+r.Checked+'/'+r.Total;
+ $('checkStatus').className=r.Result==='PASS'?'status good':r.Result==='FAIL'?'status bad':'status';
+ headers('expectations',['Tick','Variable','Expected','Actual','Mask','Result']);$('expectations').tBodies[0].replaceChildren();
+ r.Checks.forEach(c=>{const row=document.createElement('tr');[c.Tick,c.Word,textValue(c.Expected,16),textValue(c.Actual,16),c.Mask===null?'':textValue(c.Mask,16),status(c.Result)].forEach(x=>element('td',String(x),row));$('expectations').tBodies[0].appendChild(row);});
+}
+function renderTable(){
+ const kind=$('kind').value, query=$('find').value.toLowerCase(), history=kind==='history';
+ let keys=kind==='registers'?D.RegisterNames.map((_,i)=>'r:'+i):D.Variables.map((_,i)=>'v:'+i);
+ keys=keys.filter(k=>seriesName(k).toLowerCase().includes(query));
+ const total=history?D.LastTick-D.FirstTick+1:keys.length, pages=Math.max(1,Math.ceil(total/pageSize));page=Math.max(0,Math.min(page,pages-1));
+ headers('values',history?['Tick','Variable','Value']:['Variable','Initial','Value','Final']);const body=$('values').tBodies[0];body.replaceChildren();
+ for(let j=page*pageSize;j<Math.min(total,(page+1)*pageSize);j++){
+  const key=history?$('series').value:keys[j];if(!key)continue;const at=history?D.FirstTick+j:tick,bits=seriesBits(key),current=value(key,at),row=document.createElement('tr');
+  const cells=history?[at,seriesName(key),textValue(current,bits)]:[seriesName(key),textValue(value(key,D.FirstTick),bits),textValue(current,bits),textValue(value(key,D.LastTick),bits)];
+  cells.forEach((x,i)=>{const cell=element('td',String(x),row);if(i===2&&current!==value(key,D.FirstTick))cell.className='changed';});body.appendChild(row);
+ }
+ $('prev').disabled=page===0;$('next').disabled=page===pages-1;$('page').textContent=(page+1)+' / '+pages+' · '+total;
+ const flags=D.Flags[tick-D.FirstTick];$('flagValues').textContent=flags?['Zero','Negative','Overflow','Carry'].map(k=>k+'='+(flags[k]?1:0)).join(' · '):t('NoFlags');
+}
+function chart(key){
+ const card=element('div',undefined,$('charts'));card.className='chart';const bar=element('div',undefined,card);bar.className='bar';element('strong',seriesName(key),bar);
+ const close=element('button',t('Remove'),bar);close.onclick=()=>{chartKeys=chartKeys.filter(k=>k!==key);renderCharts();};
+ const svg=svgElement('svg',{viewBox:'0 0 1000 190',role:'img','aria-label':seriesName(key)},card),left=75,top=12,width=905,height=140;
+ let min=Infinity,max=-Infinity;for(let at=D.FirstTick;at<=D.LastTick;at++){const v=value(key,at);if(v!==null){min=Math.min(min,v);max=Math.max(max,v);}}
+ if(min===Infinity){element('p',t('NoData'),card);return;}if(max===min){min=Math.min(0,min);max=Math.max(min+1,max);}
+ const x=at=>left+width*(at-D.FirstTick)/Math.max(1,D.LastTick-D.FirstTick),y=v=>top+height-height*(v-min)/(max-min);
+ svgElement('path',{d:'M'+left+' '+top+'V'+(top+height)+'H980',stroke:'#b5c8d5',fill:'none'},svg);
+ [[String(max),top+6],[String(min),top+height]].forEach(pair=>{const e=svgElement('text',{x:4,y:pair[1],fill:'#405766','font-size':12},svg);e.textContent=pair[0];});
+ [[D.FirstTick,left],[D.LastTick,945]].forEach(pair=>{const e=svgElement('text',{x:pair[1],y:180,fill:'#405766','font-size':12},svg);e.textContent=String(pair[0]);});
+ const stride=Math.max(1,Math.ceil((D.LastTick-D.FirstTick+1)/width));let d='',previous=null;
+ for(let at=D.FirstTick;at<=D.LastTick;at+=stride){let low=Infinity,high=-Infinity,first=null,last=null,firstAt=at;
+  for(let n=at;n<=D.LastTick&&n<at+stride;n++){const v=value(key,n);if(v!==null){if(first===null){first=v;firstAt=n;}last=v;low=Math.min(low,v);high=Math.max(high,v);}}
+  if(first===null){previous=null;continue;}const xx=x(firstAt);
+  d+=previous===null?'M'+xx+' '+y(first):'H'+xx+'V'+y(first);d+='V'+y(low)+'V'+y(high)+'V'+y(last);previous=last;
+ }
+ if(previous!==null)d+='H'+x(D.LastTick);svgElement('path',{d,stroke:'#1775a9','stroke-width':1.5,fill:'none'},svg);
+ svgElement('path',{d:'M'+x(tick)+' '+top+'V'+(top+height),stroke:'#bd7920','stroke-width':1,'stroke-dasharray':'4 3'},svg);
+ element('div',t(stride>1?'Aggregated':'LogicalTicks')+' · '+t('Tick')+' '+tick+': '+textValue(value(key,tick),seriesBits(key)),card).className='muted';
+}
+function renderCharts(){$('charts').replaceChildren();chartKeys.forEach(chart);}
+function changeTick(at){tick=Math.max(D.FirstTick,Math.min(D.LastTick,Math.trunc(Number(at)||0)));$('tick').value=tick;$('tickNumber').value=tick;renderTable();renderCharts();}
+function localize(){document.documentElement.lang=language;document.querySelectorAll('[data-label]').forEach(e=>e.textContent=t(e.dataset.label));$('language').value=language;renderMeta();renderTable();renderCharts();}
+const pick=$('series');D.Variables.forEach((n,i)=>{const o=element('option',n,pick);o.value='v:'+i;});if(D.RegistersIncluded)D.RegisterNames.forEach((n,i)=>{const o=element('option',D.Architecture+' · '+n,pick);o.value='r:'+i;});
+chartKeys=(D.Observed.length?D.Observed:D.Variables.slice(0,4)).slice(0,4).map(n=>'v:'+D.Variables.indexOf(n));
+if(!D.Diagrams){$('diagrams').hidden=true;chartKeys=[];}
+if(!D.RegistersIncluded)$('kind').querySelector('[value=registers]').disabled=true;
+['tick','tickNumber'].forEach(id=>{$(id).min=D.FirstTick;$(id).max=D.LastTick;$(id).value=tick;$(id).addEventListener('input',()=>changeTick($(id).value));});
+$('kind').onchange=()=>{page=0;renderTable();};$('find').oninput=()=>{page=0;renderTable();};$('numberFormat').onchange=()=>{renderMeta();renderTable();renderCharts();};
+$('prev').onclick=()=>{page--;renderTable();};$('next').onclick=()=>{page++;renderTable();};pick.onchange=()=>{page=0;renderTable();};
+$('addChart').onclick=()=>{const key=pick.value;if(key&&!chartKeys.includes(key)&&chartKeys.length<8){chartKeys.push(key);renderCharts();}};
+$('language').onchange=()=>{language=$('language').value;localize();};
+// Схема содержит готовую векторную геометрию; изменение вида не выполняет программу.
+const drawing=$('schemeView').querySelector('svg');if(drawing){const original=drawing.getAttribute('viewBox').split(/\s+/).map(Number);let box=original.slice(),drag=null;
+ const apply=()=>drawing.setAttribute('viewBox',box.join(' '));const zoom=(factor,cx=.5,cy=.5)=>{const w=box[2]*factor,h=box[3]*factor;if(w<original[2]/100||w>original[2]*5)return;box=[box[0]+(box[2]-w)*cx,box[1]+(box[3]-h)*cy,w,h];apply();};
+ $('fit').onclick=()=>{box=original.slice();apply();};$('zoomIn').onclick=()=>zoom(1/1.3);$('zoomOut').onclick=()=>zoom(1.3);
+ drawing.addEventListener('wheel',e=>{e.preventDefault();const r=drawing.getBoundingClientRect();zoom(e.deltaY>0?1.15:1/1.15,(e.clientX-r.left)/r.width,(e.clientY-r.top)/r.height);},{passive:false});
+ drawing.onpointerdown=e=>{drag=[e.clientX,e.clientY,box.slice()];drawing.setPointerCapture(e.pointerId);};drawing.onpointermove=e=>{if(!drag)return;const r=drawing.getBoundingClientRect();box=[drag[2][0]-(e.clientX-drag[0])*box[2]/r.width,drag[2][1]-(e.clientY-drag[1])*box[3]/r.height,box[2],box[3]];apply();};drawing.onpointerup=()=>drag=null;drawing.onpointercancel=()=>drag=null;
+}else{$('schemeView').hidden=true;$('noScheme').hidden=false;['fit','zoomIn','zoomOut'].forEach(id=>$(id).disabled=true);}
+localize();changeTick(D.LastTick);
+})();
+</script></body></html>

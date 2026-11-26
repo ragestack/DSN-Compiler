@@ -1,0 +1,15 @@
+<!-- Автор и правообладатель: Леонов Денис <466611@mail.ru> -->
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Леонов Денис &lt;466611@mail.ru&gt;</Authors>
+    <Copyright>Автор и правообладатель: Леонов Денис &lt;466611@mail.ru&gt;</Copyright>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NuGetAudit>false</NuGetAudit>
+    <RestoreConfigFile>$(MSBuildThisFileDirectory)NuGet.Config</RestoreConfigFile>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+    <ArtifactsPath>$(MSBuildThisFileDirectory)artifacts/build</ArtifactsPath>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,11 @@
+# Автор и правообладатель: Леонов Денис <466611@mail.ru>
+.tools/
+.cache/
+.state/
+.tmp/
+artifacts/
+release/
+dependencies/
+**/bin/
+**/obj/
+src/DSN.Viewer/Assets/
